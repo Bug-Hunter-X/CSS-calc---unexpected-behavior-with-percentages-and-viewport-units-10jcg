@@ -1,0 +1,19 @@
+/* bugSolution.css */
+
+.container {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 20px);
+  }
+}
+/*Alternative solution using javascript */
+/* <script>
+  window.addEventListener('resize', function() {
+    let container = document.querySelector('.container');
+    let viewportWidth = window.innerWidth;
+    container.style.width = `calc(50% - ${Math.min(10, viewportWidth * 0.1)}vw)`;
+  });
+</script> */
